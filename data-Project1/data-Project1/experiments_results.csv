@@ -1,0 +1,9 @@
+model,stage,accuracy,time_seconds,tfidf_max_features,tfidf_ngram,model_params
+NaiveBayes,baseline,0.9002713704206241,0.008880853652954102,10000,"(1, 1)",{'alpha': 1.0}
+SVM,baseline,0.9240162822252375,24.462291479110718,10000,"(1, 1)","{'C': 1.0, 'kernel': 'linear'}"
+LogisticRegression,baseline,0.9145183175033921,0.6227681636810303,10000,"(1, 1)","{'C': 1.0, 'max_iter': 1000}"
+MLP,baseline,0.9328358208955224,83.39222931861877,10000,"(1, 1)","{'hidden_layer_sizes': (100,), 'alpha': 0.0001, 'max_iter': 300}"
+NaiveBayes,tuned,0.9056987788331072,2.222256898880005,10000,"(1, 1)",{'classifier__alpha': 0.1}
+SVM,tuned,0.9240162822252375,62.635507106781006,10000,"(1, 1)","{'classifier__C': 1, 'classifier__kernel': 'linear'}"
+LogisticRegression,tuned,0.9274084124830394,2.827852487564087,10000,"(1, 1)","{'classifier__C': 10, 'classifier__max_iter': 1000}"
+MLP,tuned,0.9314789687924017,381.0639452934265,10000,"(1, 1)","{'classifier__alpha': 0.0001, 'classifier__hidden_layer_sizes': (50,)}"
